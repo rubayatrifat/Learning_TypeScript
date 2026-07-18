@@ -9,4 +9,5 @@ var UserRoles;
     UserRoles["GUEST"] = "guest";
     UserRoles["USER"] = "user";
 })(UserRoles || (UserRoles = {}));
-//# sourceMappingURL=tuples-N-anums.js.map
+UserRoles.ADMIN;
+//# sourceMappingURL=tuples-N-enums.js.map
