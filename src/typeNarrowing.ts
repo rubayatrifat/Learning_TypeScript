@@ -32,3 +32,24 @@ function orderPizza(size: "small" | "medium" | "large" | number) {
 
     return `Take ur ${size}inch pizza!!`
 }
+
+
+
+class User {
+    greet() {
+        return `Hello User`
+    }
+}
+
+class Admin {
+    greet() {
+        return "Hello Admin"
+    }
+}
+
+
+function showGreet(role: User | Admin) {
+    if (role instanceof User) {
+        role.greet()
+    }
+}
