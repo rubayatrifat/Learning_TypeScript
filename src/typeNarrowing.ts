@@ -17,17 +17,17 @@ function userMsg(msg?: string) {
 
     return "There is no msg"
 }
-
+ 
 
 // exhaustive check 
 
 function orderPizza(size: "small" | "medium" | "large" | number) {
     if (size === "small") {
         return `Take ur ${size} pizza!!`
-    } else if (size === "medium") {
-        return `Take ur ${size} pizza!!`
+    } else if (size === "medium") { 
+        return `Take ur ${size} pizza!!` 
     } else if (size === "large") {
-        return `Take ur ${size} pizza!!`
+        return `Take ur ${size} pizza!!` 
     }
 
     return `Take ur ${size}inch pizza!!`
