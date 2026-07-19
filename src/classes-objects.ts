@@ -5,8 +5,12 @@ class CreateUser {
     public name: string,
     public role: string,
     public age: number,
-    private id: string,
+    private readonly id: string,
   ) {}
+
+  changeID() {
+    // this.id = "4asdf45"     ID is not changeable
+  }
 
   showId() {
     return `${this.name}'s ID is ${this.id}`        // Id is accessable to a method
@@ -32,3 +36,6 @@ class CreateAdmin extends CreateUser {
 
 let admin = new CreateAdmin("Admin Rifat", "System Designer", 26, "7D4U5");
 console.log(admin)
+
+
+// Protected
